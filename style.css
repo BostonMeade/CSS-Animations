@@ -17,6 +17,7 @@ img {
     /* Prevent images from exceeding the width of their parent */
     max-width: 100%;
     height: auto;
+    transition: all 1200ms;
 }
 
 #img-A:hover{
