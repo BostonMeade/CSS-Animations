@@ -1,5 +1,8 @@
 body { 
     margin: 0; /* Remove the default margin */
+
+    background: #9484e3;
+background: linear-gradient(90deg, rgba(148, 132, 227, 1) 0%, rgba(87, 199, 133, 1) 38%, rgba(214, 100, 153, 1) 69%, rgba(237, 221, 83, 1) 100%);
 }
 
 #image-row { 
@@ -16,6 +19,25 @@ img {
     height: auto;
 }
 
+#img-A:hover{
+    transition: all 600ms;
+    filter: grayscale(80%) blur(4px);
+}
+
+#img-B:hover{
+    transition: all 600ms;
+
+    filter:contrast(40%);
+}
+
+#img-C:hover{
+    transition: all 600ms;
+
+    filter: invert();
+}
+
+
+
 #click-me {
     /* Centre the button */
     display: block;
@@ -29,4 +51,37 @@ img {
 
     font-size: 2em;
     font-weight: bold;
+
+    box-shadow: 0px 2px 5px red;
+    position: relative;
+    top: 10px;
+}
+
+#click-me:hover{
+    transition: all 200ms;
+    position: relative;
+    top: 0px;
+    box-shadow: 0px 12px 5px red;
+    background-color: rgb(111, 0, 255);
+
+    animation: shake 5s infinite;
+
+}
+
+@keyframes shake{
+    0%{
+        background-color: red;
+    }
+    33%{
+       background-color: green;
+        transform: translate( 0px 10px);
+    }
+    66%{
+       background-color: blue;
+       transform: translate( 0px, 20px);
+    }
+    100%{
+        background-color: red;
+        transform: translate( 0px, 0px);
+    }
 }
