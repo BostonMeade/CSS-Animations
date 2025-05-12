@@ -39,6 +39,8 @@ img {
 
 
 #click-me {
+    transition: all 200ms;
+    
     /* Centre the button */
     display: block;
     margin: auto;
